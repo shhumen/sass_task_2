@@ -1,0 +1,19 @@
+.banner {
+  @include flex(center);
+  background-color: rgb(33, 37, 41);
+  padding: 50px;
+
+  .content {
+    text-align: center;
+    margin: 30px;
+    h1 {
+      font-size: 3.5rem;
+      font-weight: bolder;
+      color: #fff;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 1.25rem;
+    }
+  }
+}

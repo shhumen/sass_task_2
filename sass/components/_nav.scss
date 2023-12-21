@@ -1,0 +1,65 @@
+nav {
+  @include flex(space-between);
+  padding: 10px 30px;
+
+  .logo_nav {
+    .logo {
+      margin: 0 40px;
+      font-size: 1.25rem;
+      color: #000;
+    }
+    @include flex(space-around);
+    .nav_list {
+      @include flex(space-between);
+      &_item {
+        margin-right: 20px;
+        font-size: 15px;
+        a {
+          color: #000;
+          opacity: 0.6;
+          transition: 0.7s;
+        }
+        &:hover a {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .cart {
+    margin: 0 40px;
+    @include flex(space-between);
+    button {
+      border: 1px solid #212529;
+      background-color: transparent;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      //   @include btn;
+      @include flex(space-around);
+      transition: 0.7s;
+      &:hover {
+        background-color: #000;
+        color: #fff;
+        .qty {
+          background-color: #fff;
+          span {
+            color: #000;
+          }
+        }
+      }
+
+      .qty {
+        margin-left: 10px;
+        width: 25px;
+        height: 25px;
+        background-color: #000;
+        border-radius: 50%;
+        @include flex(center);
+
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
